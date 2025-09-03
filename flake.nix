@@ -9,7 +9,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       with import nixpkgs { inherit system; };
       let
-        hdt-version = "d9ae092bb37d9fe85558dfb3edfe0bb6ddddf41a";
+        hdt-version = "88110cc24d4d7d07080b40325d1905fae999ef95";
         hdt-cpp = stdenv.mkDerivation {
           pname = "hdt";
           version = hdt-version;
@@ -18,7 +18,7 @@
             owner = "rdfhdt";
             repo = "hdt-cpp";
             rev = "${hdt-version}";
-            sha256 = "sha256-n9bTZq2BXWpZ9mKsANTO2QXzED/AG4HGxGG1p5HdtE4=";
+            sha256 = "sha256-KiMipqX/TgLmGYcRbGrpiFW2IVSFSxXwLjMobu8/w6Y=";
           };
 
           buildInputs = [ zlib serd ];
